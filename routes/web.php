@@ -11,6 +11,7 @@
 |
 */
 
+use App\Http\Controllers\Software\SoftwareController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Facades\Voyager;
@@ -26,3 +27,9 @@ Route::group(['prefix' => 'admin'], function () {
 
 // Wave routes
 Wave::routes();
+
+Route::get('/disorder/types',[SoftwareController::class, 'disorderTypes'])->name('disorder.types');
+Route::get('/disorder/depression',[SoftwareController::class, 'disorderDepression'])->name('disorder.depression');
+Route::get('/disorder/{test}',[SoftwareController::class, 'disorderTest'])->name('disorder.test');
+
+
