@@ -37,8 +37,8 @@
     </div>
 
     @if(auth()->guest())
-        @include('theme::menus.guest-mobile')
+        {{-- @include('theme::menus.guest-mobile') --}}
     @else
-        @include('theme::menus.authenticated-mobile')
+        {{-- @include('theme::menus.authenticated-mobile') --}}
     @endif
 </header>

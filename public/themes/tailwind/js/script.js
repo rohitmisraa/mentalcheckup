@@ -18,7 +18,7 @@ var score = 0;
 changeQN(0);
 function changeQN(index) {
     qnblock.innerHTML =
-    `<h1 class="text-xl font-medium title-font mb-4 text-gray-900">${questions[index]}</h1>`
+    `<h1 class="text-xl sm:text-3xl title-font mb-4 text-gray-900 font-bold px-20 my-10">${questions[index]}</h1>`
 }
 
 var st1block = document.getElementById("st1-block");
@@ -54,15 +54,15 @@ var stpbardata = "";
 questions.forEach(function question(value, index) {
     if (index == 0) {
         stpbardata = stpbardata +  `
-        <a id="st${(index + 1)}" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 text-gray-500 tracking-wider rounded-t">
+        <div id="st${(index + 1)}" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 text-gray-500 tracking-wider rounded-t">
             ${(index + 1)}
-        </a>`
+        </div>`
         
     }else{
         stpbardata = stpbardata +  `
-        <a id="st${(index + 1)}" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 text-gray-500 tracking-wider rounded-t">
+        <div id="st${(index + 1)}" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 text-gray-500 tracking-wider rounded-t">
             ${(index + 1)}
-        </a>`
+        </div>`
 
     }
 });
@@ -78,6 +78,12 @@ function changestep() {
         const steps = document.getElementById("st"+step);
         steps.style.color = "green";
         steps.style.backgroundColor = "#f0f0f0";
+        if (step != 0) {
+            const prev_step = document.getElementById("st"+(step-1));
+            prev_step.style.color = "green";
+            prev_step.style.backgroundColor = "#d5d5d5";
+            
+        }
     }
 }
 
@@ -96,22 +102,23 @@ function next(val) {
         step1.style.display = "none";
         step2.style.display = "none"; 
         result.style.display = "block";
+        $("#test_container").hide();
         var totalScore = questions.length * 8;
         if (score < 40) {
             // alert("You are sad And everything will be fine!");
             message.innerText = "Little to Moderate ADHD disorder : "+ "("+ score+"/"+ totalScore +")";
-            progress_perc.innerText = (score/totalScore)*100;
+            progress_perc.innerText = Math.round((score/totalScore)*100,0);
             progress_bar.style.width = ((score/totalScore)*100)+"%";
             // progress_perc.innerText = "Your Score: " + "("+ score+"/"+ totalScore +")";
             
         }if (score < 65) {
             // alert("You are depressed and you should seek for proffessional guidance");
             message.innerText = "Moderate to severe ADHD disorder: "+ "("+ score+"/"+ totalScore +")";
-            progress_perc.innerText = (score/totalScore)*100;
+            progress_perc.innerText = Math.round((score/totalScore)*100,0);
             progress_bar.style.width = ((score/totalScore)*100)+"%";
         }else{
             message.innerText = "Severe ADHD disorder: "+ "("+ score+"/"+ totalScore +")";
-            progress_perc.innerText = (score/totalScore)*100;
+            progress_perc.innerText = Math.round((score/totalScore)*100,0);
             progress_bar.style.width = ((score/totalScore)*100)+"%";
             resultSuggest.innerHTML = "You should consult to specialist Soon as Possible";
         }

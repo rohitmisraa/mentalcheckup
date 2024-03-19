@@ -29,7 +29,10 @@ Route::group(['prefix' => 'admin'], function () {
 Wave::routes();
 
 Route::get('/disorder/types',[SoftwareController::class, 'disorderTypes'])->name('disorder.types');
-Route::get('/disorder/depression',[SoftwareController::class, 'disorderDepression'])->name('disorder.depression');
+// Route::get('/disorder/depression',[SoftwareController::class, 'disorderDepression'])->name('disorder.depression');
 Route::get('/disorder/{test}',[SoftwareController::class, 'disorderTest'])->name('disorder.test');
+Route::get('/chat',[SoftwareController::class, 'chatbot'])->name('chatbot');
+Route::get('/privacy-policy',[SoftwareController::class, 'privacyPolicy'])->name('privacyPolicy');
+Route::get('/terms-and-conditions',[SoftwareController::class, 'termsnConditions'])->name('termsnConditions');
 
 

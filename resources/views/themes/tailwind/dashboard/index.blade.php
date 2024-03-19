@@ -4,56 +4,205 @@
 @section('content')
 
 
-	<div class="flex flex-col px-8 mx-auto my-6 lg:flex-row max-w-7xl xl:px-5">
-	    <div class="flex flex-col justify-start flex-1 mb-5 overflow-hidden bg-white border rounded-lg lg:mr-3 lg:mb-0 border-gray-150">
-	        <div class="flex flex-wrap items-center justify-between p-5 bg-white border-b border-gray-150 sm:flex-no-wrap">
-				<div class="flex items-center justify-center w-12 h-12 mr-5 rounded-lg bg-wave-100">
-					<svg class="w-6 h-6 text-wave-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-				</div>
-				<div class="relative flex-1">
-	                <h3 class="text-lg font-medium leading-6 text-gray-700">
-	                    Welcome to your Dashboard
-	                </h3>
-	                <p class="text-sm leading-5 text-gray-500 mt">
-	                    Learn More Below
-	                </p>
-				</div>
+<section id="tests" class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Take a Test Again
+            </h1>
+        </div>
+        <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+                <div class="border border-gray-200 p-6 rounded-lg">
+                    <div
+                        class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">ADHD Test</h2>
+                    <p class="leading-relaxed text-base">Find out if you're experiencing the most common symptoms of
+                        ADHD.</p>
+                    <a href='/disorder/adhd'>
+                        <button type="button"
+                            class="text-white mt-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Take
+                            Test</button>
+                    </a>
+                </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+                <div class="border border-gray-200 p-6 rounded-lg">
+                    <div
+                        class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                            <circle cx="6" cy="6" r="3"></circle>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Anxiety Test</h2>
+                    <p class="leading-relaxed text-base">Find out if your anxiety could be a sign of something more
+                        serious.</p>
+                    <a href='/disorder/anxiety'>
+                        <button type="button"
+                            class="text-white mt-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Take
+                            Test</button>
+                    </a>
+                </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+                <div class="border border-gray-200 p-6 rounded-lg">
+                    <div
+                        class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Bipolar Test</h2>
+                    <p class="leading-relaxed text-base">Find out if you are showing some of the symptoms of Bipolar
+                        Disorder.</p>
+                    <a href='/disorder/bipolar-disorder'>
+                        <button type="button"
+                            class="text-white mt-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Take
+                            Test</button>
+                    </a>
+                </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+                <div class="border border-gray-200 p-6 rounded-lg">
+                    <div
+                        class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Depression Test</h2>
+                    <p class="leading-relaxed text-base">If you're unsure if you are depressed, our 2-minute test
+                        can help evaluate your mood.</p>
 
-	        </div>
-	        <div class="relative p-5">
-	            <p class="text-base leading-loose text-gray-500">This is your application <a href="{{ route('wave.dashboard') }}" class="underline text-wave-500">dashboard</a>, you can customize this view inside of <code class="px-2 py-1 font-mono text-base font-medium text-gray-600 bg-gray-100 rounded-md">{{ theme_folder('/dashboard/index.blade.php') }}</code><br><br> (Themes are located inside the <code>resources/views/themes</code> folder)</p>
-				<span class="inline-flex mt-5 rounded-md shadow-sm">
-	                <a href="{{ url('docs') }}" class="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50">
-	                    Read The Docs
-	                </a>
-				</span>
-			</div>
-		</div>
-		<div class="flex flex-col justify-start flex-1 overflow-hidden bg-white border rounded-lg lg:ml-3 border-gray-150">
-	        <div class="flex flex-wrap items-center justify-between p-5 bg-white border-b border-gray-150 sm:flex-no-wrap">
-				<div class="flex items-center justify-center w-12 h-12 mr-5 rounded-lg bg-wave-100">
-					<svg class="w-6 h-6 text-wave-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path></svg>
-				</div>
-				<div class="relative flex-1">
-	                <h3 class="text-lg font-medium leading-6 text-gray-700">
-						Learn more about Wave
-	                </h3>
-	                <p class="text-sm leading-5 text-gray-500 mt">
-						Are you more of a visual learner?
-	                </p>
-				</div>
+                    <a href='/disorder/depression'>
 
-	        </div>
-	        <div class="relative p-5">
-				<p class="text-base leading-loose text-gray-500">Make sure to head on over to the Wave Video Tutorials to learn more how to use and customize Wave.<br><br>Click on the button below to checkout the video tutorials.</p>
-				<span class="inline-flex mt-5 rounded-md shadow-sm">
-	                <a href="https://devdojo.com/course/wave" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50">
-						Watch The Videos
-	                </a>
-				</span>
-			</div>
-	    </div>
+                        <button type="button"
+                            class="text-white mt-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Take
+                            Test</button>
 
-	</div>
+                    </a>
+                </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+                <div class="border border-gray-200 p-6 rounded-lg">
+                    <div
+                        class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Autism Test</h2>
+                    <p class="leading-relaxed text-base">Are you experiencing the most common symptoms of autism?
+                        Find out using our online test.</p>
+                    <a href='/disorder/autism'>
+                        <button type="button"
+                            class="text-white mt-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Take
+                            Test</button>
+                    </a>
+                </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+                <div class="border border-gray-200 p-6 rounded-lg">
+                    <div
+                        class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">OCD Test</h2>
+                    <p class="leading-relaxed text-base">Find out if you are experiencing the most common symptoms
+                        of OCD.</p>
+                    <a href='/disorder/ocd'>
+                        <button type="button"
+                            class="text-white mt-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Take
+                            Test</button>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+            <div class="flex flex-wrap -m-4">
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg ml-4">
+                        <div
+                            class="w-9 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 ">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">PTSD Test</h2>
+                        <p class="leading-relaxed text-base">Are you experiencing the most common symptoms of PTSD?
+                            Find out using our online test.</p><br><br>
+                        <a href='/disorder/ptsd'>
+
+
+                            <button type="button"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Take
+                                Test</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div
+                            class="w-9 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <circle cx="6" cy="6" r="3"></circle>
+                                <circle cx="6" cy="18" r="3"></circle>
+                                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Stress Test</h2>
+                        <p class="leading-relaxed text-base">Find out if your feelings are a sign of something more
+                            serious.</p><br><br>
+                        <a href='/disorder/stress'>
+
+                            <button type="button"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Take
+                                Test</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg mr-4">
+                        <div
+                            class="w-9 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Binge Eating Test</h2>
+                        <p class="leading-relaxed text-base">Find out if your eating habits could be a sign of a
+                            binge eating disorder.</p><br><br>
+                        <a href='/disorder/binge-eating'>
+                            <button type="button"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Take
+                                Test</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 @endsection
