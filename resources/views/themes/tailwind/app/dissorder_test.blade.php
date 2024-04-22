@@ -125,16 +125,16 @@
 
         <div id="result" class="mx-auto hidden bg-green-100">
             <div class="w-screen py-10 bg-green-600">
-                <p class="text-lg text-white w-full xl:w-[800px] mx-auto">The questions are based on the "ADHD Test"
+                <p class="text-lg text-white w-full xl:w-[800px] mx-auto">The questions are based on the "{{$questions[0]['type']}} Test"
                     rating
                     scale and should only be useed as an indicator of wheather you may be at risk of having or
-                    developing a ADHD. They are not intended to replace a professional diagnosis.</p>
+                    developing a {{$questions[0]['type']}}. They are not intended to replace a professional diagnosis.</p>
             </div>
             <div class="w-full xl:w-[900px] shadow-md mx-auto text-center mt-10 p-4 bg-white rounded-lg px-5 sm:px-10">
                 <h2 class="text-2xl">These results indicate that you are expriencing...</h2>
                 <!-- <h2 class="text-2xl">These results indicate that you are expriencing...</h2> -->
                 <p></p>
-                <p class="text-lg sm:text-2xl text-indigo-800 my-4" id="result-message">Little to Moderate ADHD disorder
+                <p class="text-lg sm:text-2xl text-indigo-800 my-4" id="result-message">Little to Moderate {{$questions[0]['type']}} disorder
                 </p>
 
                 <div class="w-full h-10 border-2 rounded-full">
@@ -153,7 +153,7 @@
                 </div>
                 <div class="text-left">
                     <p class="mt-10">The answers you have given suggest that you are experiencing many of the
-                        symptoms of a ADHD of and they are having a significant impact on the quality of your life.
+                        symptoms of a {{$questions[0]['type']}} of and they are having a significant impact on the quality of your life.
                     </p>
                     <p class="mt-2">We recommend you see a specialist as soon as possible as we know that seeking
                         help and treatment early can have a significant impact on being able to make a full
@@ -233,10 +233,124 @@
                         <select id="states"
                             class="bg-gray-50 mt-5 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
                             <option selected>Choose a State</option>
-                            <option value="dehradun">Uttrakhand</option>
-                            <option value="patna">Bihar</option>
-                            <option value="lucknow">Utter Pradesh</option>
-                            <option value="kolkata">West Bangal</option>
+                            <option value="hyderabad">Andhra Pradesh</option>
+                        <option value="itanagar">Arunachal Pradesh</option>
+                        <option value="dispur">Assam</option>
+                        <option value="patna">Bihar</option>
+                        <option value="raipur">Chhattisgarh</option>
+                        <option value="panaji">Goa</option>
+                        <option value="gandhinagar">Gujarat</option>
+                        <option value="chandigarh">Haryana</option>
+                        <option value="shimla">Himachal Pradesh</option>
+                        <option value="srinagar">Jammu and Kashmir</option>
+                        <option value="ranchi">Jharkhand</option>
+                        <option value="bengaluru">Karnataka</option>
+                        <option value="thiruvananthapuram">Kerala</option>
+                        <option value="bhopal">Madhya Pradesh</option>
+                        <option value="mumbai">Maharashtra</option>
+                        <option value="imphal">Manipur</option>
+                        <option value="shillong">Meghalaya</option>
+                        <option value="aizawl">Mizoram</option>
+                        <option value="kohima">Nagaland</option>
+                        <option value="bhubaneswar">Odisha</option>
+                        <option value="chandigarh">Punjab</option>
+                        <option value="jaipur">Rajasthan</option>
+                        <option value="gangtok">Sikkim</option>
+                        <option value="chennai">Tamil Nadu</option>
+                        <option value="hyderabad">Telangana</option>
+                        <option value="lucknow">Uttar Pradesh</option>
+                        <option value="dehradun">Uttarakhand</option>
+                        <option value="kolkata">West Bengal</option>
+                        <option value="agartala">Tripura</option>
+                        <option value="ranchi">Jharkhand</option>
+                        <option value="bhubaneswar">Odisha</option>
+                        <option value="gandhinagar">Gujarat</option>
+                        <option value="chandigarh">Chandigarh</option>
+                        <option value="kolkata">West Bengal</option>
+                        <option value="raipur">Chhattisgarh</option>
+                        <option value="mumbai">Maharashtra</option>
+                        <option value="bengaluru">Karnataka</option>
+                        <option value="lucknow">Uttar Pradesh</option>
+                        <option value="hyderabad">Telangana</option>
+                        <option value="thiruvananthapuram">Kerala</option>
+                        <option value="chennai">Tamil Nadu</option>
+                        <option value="patna">Bihar</option>
+                        <option value="kohima">Nagaland</option>
+                        <option value="itanagar">Arunachal Pradesh</option>
+                        <option value="dispur">Assam</option>
+                        <option value="imphal">Manipur</option>
+                        <option value="shimla">Himachal Pradesh</option>
+                        <option value="srinagar">Jammu and Kashmir</option>
+                        <option value="bhopal">Madhya Pradesh</option>
+                        <option value="jaipur">Rajasthan</option>
+                        <option value="gandhinagar">Gujarat</option>
+                        <option value="agartala">Tripura</option>
+                        <option value="shillong">Meghalaya</option>
+                        <option value="aizawl">Mizoram</option>
+                        <option value="chandigarh">Punjab</option>
+                        <option value="dehradun">Uttarakhand</option>
+                        <option value="gangtok">Sikkim</option>
+                        <option value="panaji">Goa</option>
+                        <option value="raipur">Chhattisgarh</option>
+                        <option value="mumbai">Maharashtra</option>
+                        <option value="bhubaneswar">Odisha</option>
+                        <option value="kolkata">West Bengal</option>
+                        <option value="shimla">Himachal Pradesh</option>
+                        <option value="imphal">Manipur</option>
+                        <option value="dispur">Assam</option>
+                        <option value="itanagar">Arunachal Pradesh</option>
+                        <option value="gandhinagar">Gujarat</option>
+                        <option value="patna">Bihar</option>
+                        <option value="bhopal">Madhya Pradesh</option>
+                        <option value="thiruvananthapuram">Kerala</option>
+                        <option value="lucknow">Uttar Pradesh</option>
+                        <option value="jaipur">Rajasthan</option>
+                        <option value="chandigarh">Haryana</option>
+                        <option value="agartala">Tripura</option>
+                        <option value="shillong">Meghalaya</option>
+                        <option value="aizawl">Mizoram</option>
+                        <option value="kohima">Nagaland</option>
+                        <option value="panaji">Goa</option>
+                        <option value="gangtok">Sikkim</option>
+                        <option value="shillong">Meghalaya</option>
+                        <option value="chandigarh">Punjab</option>
+                        <option value="srinagar">Jammu and Kashmir</option>
+                        <option value="hyderabad">Andhra Pradesh</option>
+                        <option value="bengaluru">Karnataka</option>
+                        <option value="bhubaneswar">Odisha</option>
+                        <option value="lucknow">Uttar Pradesh</option>
+                        <option value="chennai">Tamil Nadu</option>
+                        <option value="dispur">Assam</option>
+                        <option value="imphal">Manipur</option>
+                        <option value="itanagar">Arunachal Pradesh</option>
+                        <option value="gandhinagar">Gujarat</option>
+                        <option value="patna">Bihar</option>
+                        <option value="bhopal">Madhya Pradesh</option>
+                        <option value="thiruvananthapuram">Kerala</option>
+                        <option value="lucknow">Uttar Pradesh</option>
+                        <option value="jaipur">Rajasthan</option>
+                        <option value="chandigarh">Haryana</option>
+                        <option value="agartala">Tripura</option>
+                        <option value="shillong">Meghalaya</option>
+                        <option value="aizawl">Mizoram</option>
+                        <option value="kohima">Nagaland</option>
+                        <option value="panaji">Goa</option>
+                        <option value="gangtok">Sikkim</option>
+                        <option value="shimla">Himachal Pradesh</option>
+                        <option value="dehradun">Uttarakhand</option>
+                        <option value="chandigarh">Chandigarh</option>
+                        <option value="raipur">Chhattisgarh</option>
+                        <option value="mumbai">Maharashtra</option>
+                        <option value="bengaluru">Karnataka</option>
+                        <option value="lucknow">Uttar Pradesh</option>
+                        <option value="hyderabad">Telangana</option>
+                        <option value="thiruvananthapuram">Kerala</option>
+                        <option value="chennai">Tamil Nadu</option>
+                        <option value="patna">Bihar</option>
+                        <option value="kohima">Nagaland</option>
+                        <option value="itanagar">Arunachal Pradesh</option>
+                        <option value="dispur">Assam</option>
+
                         </select>
                         <div class="w-max mx-auto">
                             <button type="button" onclick="showMap()"
@@ -254,7 +368,7 @@
                     <img class="h-28" src="https://mentalcheckup.netlify.app/assets/hathayoga.svg" alt="yoga">
                     <div>
                         <h3 class="text-2xl pl-6">NIDRA YOGA</h3>
-                        <p class="pl-6">Yoga Nidra is a deep relaxation practice that can help children with ADHD
+                        <p class="pl-6">Yoga Nidra is a deep relaxation practice that can help children with {{$questions[0]['type']}}
                             manage stress and anxiety effectively</p>
                         <p class="pl-6">Yoga nidra allows you to access delta brainwaves, which are responsible for
                             the healing and restoration that happens in your body during deep sleep</p>

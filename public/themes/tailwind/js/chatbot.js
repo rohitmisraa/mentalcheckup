@@ -25,17 +25,24 @@ function sendMessage() {
     // });
 
     $.ajax({
-        type: 'GET',
+        type: 'Get',
         url: 'http://127.0.0.1:5000/chat/hello',
         headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
-        data: {
-            'subsItem': "subsItem",
+        data: { 
+            'subsItem': subsItem, 
+            'price_id': plan, 
+           
         },
         success: function(msg){
-            alert(msg);
-            
+            console.log(msg);
+            if ($('#resumebtn').text() === 'Resume') {
+                $('#resumebtn').text('Cancel').button("refresh");
+            }else{
+                $('#resumebtn').text('Resume').button("refresh");
+
+            }
         }
     });
 
